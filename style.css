@@ -1,0 +1,779 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #F5F1EB;
+  color: #1A1A1A;
+}
+
+/* NAVBAR */
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 60px;
+  color: white;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+.btn {
+  border: 1px solid #CBA35C;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('../images/hero.jpg') no-repeat center/cover;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 29, 38, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  padding: 12px 30px;
+  background: #CBA35C;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 29, 38, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+.slide {
+  transform: scale(1);
+  transition: opacity 1.5s ease-in-out, transform 6s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    rgba(11, 29, 38, 0.6),
+    rgba(11, 29, 38, 0.7)
+  );
+  z-index: 1;
+}
+.hero h1 {
+  font-size: 64px;
+  letter-spacing: 1px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+.experience {
+  padding: 80px 60px;
+  background: #F5F1EB;
+}
+
+.exp-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+/* TEXT */
+.exp-text {
+  flex: 1;
+}
+
+.exp-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.exp-text p {
+  line-height: 1.7;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+/* BUTTON */
+.exp-btn {
+  padding: 12px 28px;
+  background: #CBA35C;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* IMAGE */
+.exp-image {
+  flex: 1;
+}
+
+.exp-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+.exp-image img {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+.exp-image img {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+.rooms {
+  padding: 80px 60px;
+  background: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+/* GRID */
+.room-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* CARD */
+.room-card {
+  width: 300px;
+  background: #F5F1EB;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.room-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* INFO */
+.room-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.room-info h3 {
+  margin-bottom: 10px;
+}
+
+.room-info p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.room-info span {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* BUTTON */
+.room-info button {
+  padding: 10px 20px;
+  background: #CBA35C;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.room-card:hover {
+  transform: translateY(-10px);
+}
+
+.features {
+  padding: 90px 60px;
+  background: #F5F1EB;
+  text-align: center;
+}
+
+.feature-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.feature-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  width: 320px;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.feature-card h3 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.feature-card p {
+  color: #666;
+  line-height: 1.7;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.rooms-hero {
+  height: 65vh;
+  background-image: url('../images/rooms-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.55);
+  z-index: 1;
+}
+.rooms-hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.rooms-hero-content h1 {
+  font-size: 64px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.rooms-hero-content p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.rooms-intro {
+  padding: 90px 60px;
+  text-align: center;
+  background: #F5F1EB;
+}
+
+.rooms-intro h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.rooms-intro p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+  color: #555;
+}
+.room-card img {
+  transition: transform 0.5s ease;
+}
+
+.room-card:hover img {
+  transform: scale(1.05);
+}
+
+
+.about-hero {
+  height: 65vh;
+  background-image: url('../images/about-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.about-hero-content h1 {
+  font-size: 64px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.about-hero-content p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.story {
+  padding: 100px 60px;
+  background: #F5F1EB;
+}
+
+.story-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* IMAGE */
+.story-image {
+  flex: 0.6;
+}
+
+.story-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* TEXT */
+.story-text {
+  flex: 1.1;
+}
+
+.story-text h2 {
+  font-size: 42px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 25px;
+}
+
+.story-text p {
+  line-height: 1.9;
+  color: #555;
+  margin-bottom: 20px;
+}
+.story-image img {
+  transition: transform 0.5s ease;
+}
+
+.story-image img:hover {
+  transform: scale(1.03);
+}
+
+.highlights {
+  padding: 100px 60px;
+  background: white;
+  text-align: center;
+}
+
+.highlight-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+/* CARD */
+.highlight-card {
+  background: #F5F1EB;
+  padding: 40px 30px;
+  width: 250px;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+
+/* NUMBER */
+.highlight-card h3 {
+  font-size: 42px;
+  color: #CBA35C;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* TEXT */
+.highlight-card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.highlight-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+
+.about-cta {
+  padding: 110px 60px;
+  background: #F5F1EB;
+  text-align: center;
+}
+
+/* HEADING */
+.cta-content h2 {
+  font-size: 52px;
+  font-family: 'Playfair Display', serif;
+  color: #0B1D26;
+  margin-bottom: 20px;
+}
+
+/* PARAGRAPH */
+.cta-content p {
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+  margin-bottom: 35px;
+  color: #444;
+}
+
+/* BUTTON */
+.cta-btn {
+  display: inline-block;
+  padding: 14px 32px;
+  background: #0B1D26;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #102836;
+}
+.about-cta {
+  border-top: 1px solid #e5ddd2;
+}
+
+.footer {
+  background: #EAE2D6;
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.footer h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  color: #2f3A40;
+}
+
+/* ICONS */
+.social-icons {
+  margin: 25px 0;
+}
+
+.social-icons a {
+  color: #1B2A30;
+  margin: 0 12px;
+  font-size: 22px;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #CBA35C;
+}
+
+/* CONTACT */
+.footer-contact {
+  margin-bottom: 20px;
+}
+
+/* COPYRIGHT */
+.copyright {
+  font-size: 14px;
+  opacity: 0.7;
+}
+.footer h2 {
+  color: #1B2A30;
+}
+
+.contact-hero {
+  height: 60vh;
+  background-image: url('../images/contact-banner.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.contact-hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contact-hero-content h1 {
+  font-size: 64px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.contact-hero-content p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+.contact-section {
+  padding: 100px 60px;
+  background: #F5F1EB;
+}
+
+.contact-container {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+/* LEFT SIDE */
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h2 {
+  font-size: 42px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+  color: #1B2A30;
+}
+
+.contact-info p {
+  color: #555;
+  line-height: 1.9;
+  margin-bottom: 35px;
+}
+
+/* INFO BOX */
+.info-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  color: #2F3A40;
+}
+
+.info-box i {
+  color: #CBA35C;
+  font-size: 20px;
+}
+
+/* FORM */
+.contact-form {
+  flex: 1;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 18px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: white;
+  font-size: 16px;
+  outline: none;
+}
+
+/* BUTTON */
+.contact-form button {
+  padding: 16px;
+  border: none;
+  background: #1B2A30;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #2F3A40;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 1px solid #CBA35C;
+  box-shadow: 0 0 10px rgba(203, 163, 92, 0.2);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #888;
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+}
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media (max-width: 768px) {
+
+  .navbar {
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.nav-links {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero-content h1,
+.rooms-hero-content h1,
+.about-hero-content h1,
+.contact-hero-content h1 {
+  font-size: 38px;
+}
+
+.hero-content p,
+.rooms-hero-content p,
+.about-hero-content p,
+.contact-hero-content p {
+  font-size: 16px;
+  padding: 0 20px;
+}
+
+.room-container,
+.feature-container,
+.highlight-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.story-container {
+  flex-direction: column;
+  text-align: center;
+}
+
+.story-image img {
+  max-width: 100%;
+}
+
+.contact-container {
+  flex-direction: column;
+}
+
+.contact-info,
+.contact-form {
+  width: 100%;
+}
+
+.features,
+.story,
+.highlights,
+.contact-section,
+.rooms-intro,
+.about-cta {
+  padding: 70px 25px;
+}
+
+}
+
