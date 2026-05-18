@@ -323,7 +323,7 @@ body {
 
 .rooms-hero {
   height: 65vh;
-  background-image: url('../images/rooms-banner.jpg');
+  background-image: url('images/rooms-banner.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -384,7 +384,7 @@ body {
 
 .about-hero {
   height: 65vh;
-  background-image: url('../images/about-banner.jpg');
+  background-image: url('images/about-banner.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -589,7 +589,7 @@ body {
 
 .contact-hero {
   height: 60vh;
-  background-image: url('../images/contact-banner.jpg');
+  background-image: url('images/contact-banner.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
